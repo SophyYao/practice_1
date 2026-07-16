@@ -31,27 +31,53 @@
 # else:
 #     print("没用python")
 
-s="abcdab"
-print("------------计算字符串的长度------------")
-print(len(s))
-print("------------翻转字符串------------")
-m=s[::-1]
-print(m)
-n=list(s)
-n.reverse()  #这个也是翻转  .reverse() 是列表专属方法
-str1=""     # 再将列表转换成字符串
-for i in n:
-    str1 += i
-print(str1)
-print("------------统计各个字符串出现的次数------------")
-diff=""
-for char in s:
-    print(char)
-    is_new=True
-    for exist in diff:
-        if exist == char:
-            is_new = False
-            break
-    if is_new == True:
-        diff += char
-print(diff)
+# s="abcdab"
+# # print("------------计算字符串的长度------------")
+# # print(len(s))
+# # print("------------翻转字符串------------")
+# # m=s[::-1]
+# # print(m)
+# # n=list(s)
+# # n.reverse()  #这个也是翻转  .reverse() 是列表专属方法
+# # str1=""     # 再将列表转换成字符串
+# # for i in n:
+# #     str1 += i
+# # print(str1)
+# # print("------------统计各个字符串出现的次数------------")
+# # diff=""
+# # for char in s:
+# #     print(char)
+# #     is_new=True
+# #     for exist in diff:
+# #         if exist == char:
+# #             is_new = False
+# #             break
+# #     if is_new == True:
+# #         diff += char
+# # print(diff)
+
+#编写一个程序,定义一个列表,将列表里面所有的元素去重
+# s="abcdab"
+# char_count = {}
+# for char in s:
+#     if char in char_count:
+#         char_count[char] += 1
+#     else:
+#         char_count[char] = 1
+# print(char_count)
+
+# set 会自动去重，但会打乱原有顺序
+# my_list = [1, 2, 2, 3, 4, 4, 4, 5, 1]
+# unique_list = list(set(my_list))
+# print(unique_list)
+
+# 利用字典的key来去重
+# s1 = [1,2,3,4,5,6,7]
+# s2 = [3,4,5,6,7,8,9]
+# ss = s1 + s2
+# print(ss)
+# dict = {}
+# for s in ss:
+#     dict[s] = "无所谓"
+# print(list(dict))
+
